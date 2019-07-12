@@ -56,6 +56,14 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void doClear(){
+    setState(() {
+     t1.text = "0";
+     t2.text = "0";
+
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -73,6 +81,7 @@ class _HomePageState extends State<HomePage> {
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(hintText: "Enter First number..."),
+       
               controller: t1,
             ),
             new TextField(
@@ -117,6 +126,20 @@ class _HomePageState extends State<HomePage> {
                 ),
                 
               ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new MaterialButton(
+                  child: new Text("Clear"),
+                  color: Colors.greenAccent,
+                  onPressed: doClear,
+                )
+              ],
+
             )
 
           ],
