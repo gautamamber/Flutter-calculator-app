@@ -17,10 +17,37 @@ class _HomePageState extends State<HomePage> {
 
   // get text from keyboard, text editing controller
 
-  final TextEditingController t1 = new TextEditingController(text: "0")
-  final TextEditingController t2 = new TextEditingController(text: "0")
+  final TextEditingController t1 = new TextEditingController(text: "0");
+  final TextEditingController t2 = new TextEditingController(text: "0");
 
   void doAddition(){
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+
+    });
+  }
+
+  void doSubtract(){
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+
+    });
+  }
+
+  void doMultiply(){
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+
+    });
+  }
+
+  void doDivide(){
     setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
@@ -62,12 +89,12 @@ class _HomePageState extends State<HomePage> {
                 new MaterialButton(
                   child: new Text("+"),
                   color: Colors.greenAccent,
-                  onPressed: (){},
+                  onPressed: doAddition
                 ),
                 new MaterialButton(
                   child: new Text("-"),
                   color: Colors.greenAccent,
-                  onPressed: (){},
+                  onPressed: doSubtract
                 ),
                 
               ],
@@ -81,12 +108,12 @@ class _HomePageState extends State<HomePage> {
                 new MaterialButton(
                   child: new Text("*"),
                   color: Colors.greenAccent,
-                  onPressed: (){},
+                  onPressed: doMultiply
                 ),
                 new MaterialButton(
                   child: new Text("/"),
                   color: Colors.greenAccent,
-                  onPressed: (){},
+                  onPressed: doDivide
                 ),
                 
               ],
