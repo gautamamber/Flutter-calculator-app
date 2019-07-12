@@ -30,13 +30,40 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.only(top: 20.0),
             ),
             new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new MaterialButton(
+                  child: new Text("+"),
+                  onPressed: (){},
+                ),
+                new MaterialButton(
+                  child: new Text("-"),
+                  onPressed: (){},
+                ),
+                
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+             new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new MaterialButton(
+                  child: new Text("*"),
+                  onPressed: (){},
+                ),
+                new MaterialButton(
+                  child: new Text("/"),
+                  onPressed: (){},
+                ),
+                
+              ],
             )
 
           ],
         ),
         ),
-      ),
-    );
+      );
   }
 }
