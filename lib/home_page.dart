@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 - num2;
 
     });
   }
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 * num2;
 
     });
   }
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       num1 = int.parse(t1.text);
       num2 = int.parse(t2.text);
-      sum = num1 + num2;
+      sum = num1 ~/ num2;
 
     });
   }
