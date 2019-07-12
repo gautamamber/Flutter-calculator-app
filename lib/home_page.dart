@@ -18,6 +18,8 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
 
           children: <Widget>[
+            new Text("Output: ", 
+            style: new TextStyle(fontSize: 20.0, color: Colors.deepOrange),),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(hintText: "Enter First number..."),
@@ -34,10 +36,12 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 new MaterialButton(
                   child: new Text("+"),
+                  color: Colors.greenAccent,
                   onPressed: (){},
                 ),
                 new MaterialButton(
                   child: new Text("-"),
+                  color: Colors.greenAccent,
                   onPressed: (){},
                 ),
                 
@@ -51,10 +55,12 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 new MaterialButton(
                   child: new Text("*"),
+                  color: Colors.greenAccent,
                   onPressed: (){},
                 ),
                 new MaterialButton(
                   child: new Text("/"),
+                  color: Colors.greenAccent,
                   onPressed: (){},
                 ),
                 
